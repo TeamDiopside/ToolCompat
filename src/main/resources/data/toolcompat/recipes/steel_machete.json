@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nethersdelight"
+    }, {
+      "type": "forge:mod_loaded",
+      "modid": "alloyed"
+    }
+  ],
+  "type": "minecraft:smithing",
+  "addition": {
+    "tag": "forge:ingots/steel"
+  },
+  "base": {
+    "item": "nethersdelight:iron_machete"
+  },
+  "result": {
+    "item": "toolcompat:steel_machete"
+  }
+}

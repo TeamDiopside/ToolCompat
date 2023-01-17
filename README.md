@@ -23,6 +23,16 @@ Steel from [Create: Alloyed](https://www.curseforge.com/minecraft/mc-mods/create
 
 Ice from [Frosted Friends](https://www.curseforge.com/minecraft/mc-mods/frosted-friends)
 
+## FAQ
+
+Q: Does this add whole toolsets for materials without a toolset?
+
+A: No, it only fills gaps, for example: you need Create Stuff & Additions because Create does not add toolsets itself.
+
+Q: Can material x be added to tool y?
+
+A: Please use the [GitHub suggestion form](https://github.com/curryducker/ToolCompat/issues/new/choose).
+
 
 
 [![Discord](https://i.imgur.com/JiW4MLF.png)](https://discord.gg/PJCXjSJnu2)

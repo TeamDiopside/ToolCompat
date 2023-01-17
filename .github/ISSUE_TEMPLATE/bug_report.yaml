@@ -1,0 +1,29 @@
+name: Issue Report
+description: Tell us about your issue
+title: "[Issue]: "
+labels: ["bug"]
+assignees:
+  - curryducker
+body:
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue
+      description: Tell us about your issue!
+      placeholder: 1. What happened?\n2. What did you expect to happen?\n3. How can we reproduce the bug?
+      value: "1. What happened?\n\n2. What did you expect to happen?\n\n3. How can we reproduce the bug?\n"
+    validations:
+      required: true
+  - type: checkboxes
+    id: latest-version
+    attributes:
+      label: Latest version
+      options:
+        - label: I am running the latest version of the mod
+          required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: latest.log
+      description: Please give us a URL to your latest.log (we recommend uploading it to https://gist.github.com/)
+      placeholder: https://gist.github.com/<userid>/<gistid>

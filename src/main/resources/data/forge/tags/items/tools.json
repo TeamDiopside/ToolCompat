@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "#forge:tools/knives",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/machetes",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/snow_shovels",
+      "required": false
+    }
+  ]
+}

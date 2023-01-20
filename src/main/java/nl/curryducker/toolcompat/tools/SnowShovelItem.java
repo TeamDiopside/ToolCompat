@@ -14,13 +14,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import java.util.List;
 
 public class SnowShovelItem extends ShovelItem {
-    public SnowShovelItem(Tier p_43114_, float p_43115_, float p_43116_, Properties p_43117_) {
-        super(p_43114_, p_43115_, p_43116_, p_43117_);
+    public SnowShovelItem(Tier pTier, float pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+        super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
 
     public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
         boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-        WoodenSnowShovelBlockDestroyedWithToolProcedure.execute(world, (double)pos.getX(), (double)pos.getY(), (double)pos.getZ());
+        WoodenSnowShovelBlockDestroyedWithToolProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
         return retval;
     }
 

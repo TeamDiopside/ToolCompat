@@ -11,8 +11,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import nl.curryducker.toolcompat.ToolCompat;
-import nl.curryducker.toolcompat.tools.ModTiers;
-import nl.curryducker.toolcompat.tools.SnowShovelItem;
 import umpaz.nethersdelight.NethersDelight;
 import umpaz.nethersdelight.common.item.MacheteItem;
 import vectorwing.farmersdelight.common.item.KnifeItem;

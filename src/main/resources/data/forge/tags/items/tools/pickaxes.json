@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "alexsmobs:ghostly_pickaxe",
+      "required": false
+    },
+    {
+      "id": "create_sa:blazing_pickaxe",
+      "required": false
+    },
+    {
+      "id": "create_sa:rose_quartz_pickaxe",
+      "required": false
+    },
+    {
+      "id": "create_sa:brass_pickaxe",
+      "required": false
+    },
+    {
+      "id": "create_sa:zinc_pickaxe",
+      "required": false
+    },
+    {
+      "id": "create_sa:copper_pickaxe",
+      "required": false
+    },
+    {
+      "id": "create_sa:experience_pickaxe",
+      "required": false
+    },
+    {
+      "id": "alloyed:steel_pickaxe",
+      "required": false
+    },
+    {
+      "id": "frosted_friends:ice_pickaxe",
+      "required": false
+    }
+  ]
+}

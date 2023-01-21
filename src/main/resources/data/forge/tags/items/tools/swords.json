@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "create_sa:blazing_cleaver",
+      "required": false
+    },
+    {
+      "id": "create_sa:rose_quartz_sword",
+      "required": false
+    },
+    {
+      "id": "create_sa:brass_sword",
+      "required": false
+    },
+    {
+      "id": "create_sa:zinc_sword",
+      "required": false
+    },
+    {
+      "id": "create_sa:copper_sword",
+      "required": false
+    },
+    {
+      "id": "create_sa:experience_sword",
+      "required": false
+    },
+    {
+      "id": "alloyed:steel_sword",
+      "required": false
+    },
+    {
+      "id": "frosted_friends:ice_sword",
+      "required": false
+    }
+  ]
+}

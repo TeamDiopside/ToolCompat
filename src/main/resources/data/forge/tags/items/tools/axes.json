@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "create_sa:blazing_axe",
+      "required": false
+    },
+    {
+      "id": "create_sa:rose_quartz_axe",
+      "required": false
+    },
+    {
+      "id": "create_sa:brass_axe",
+      "required": false
+    },
+    {
+      "id": "create_sa:zinc_axe",
+      "required": false
+    },
+    {
+      "id": "create_sa:copper_axe",
+      "required": false
+    },
+    {
+      "id": "create_sa:experience_axe",
+      "required": false
+    },
+    {
+      "id": "alloyed:steel_axe",
+      "required": false
+    },
+    {
+      "id": "frosted_friends:ice_axe",
+      "required": false
+    }
+  ]
+}

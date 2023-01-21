@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "create_sa:blazing_shovel",
+      "required": false
+    },
+    {
+      "id": "create_sa:rose_quartz_shovel",
+      "required": false
+    },
+    {
+      "id": "create_sa:brass_shovel",
+      "required": false
+    },
+    {
+      "id": "create_sa:zinc_shovel",
+      "required": false
+    },
+    {
+      "id": "create_sa:copper_shovel",
+      "required": false
+    },
+    {
+      "id": "create_sa:experience_shovel",
+      "required": false
+    },
+    {
+      "id": "alloyed:steel_shovel",
+      "required": false
+    },
+    {
+      "id": "frosted_friends:ice_shovel",
+      "required": false
+    }
+  ]
+}

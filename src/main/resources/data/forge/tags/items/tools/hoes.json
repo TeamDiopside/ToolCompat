@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "create_sa:brass_hoe",
+      "required": false
+    },
+    {
+      "id": "create_sa:zinc_hoe",
+      "required": false
+    },
+    {
+      "id": "create_sa:copper_hoe",
+      "required": false
+    },
+    {
+      "id": "alloyed:steel_hoe",
+      "required": false
+    },
+    {
+      "id": "frosted_friends:ice_hoe",
+      "required": false
+    }
+  ]
+}

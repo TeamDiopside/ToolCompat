@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "frosted_friends:custom/winter_spade",
   "textures": {
-    "layer0": "toolcompat:item/brass_snow_shovel"
+    "0": "toolcompat:item/brass_snow_shovel",
+    "particle": "toolcompat:item/brass_snow_shovel"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "frosted_friends:custom/winter_spade",
+  "textures": {
+    "particle": "#0"
+  }
+}

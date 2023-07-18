@@ -1,14 +1,29 @@
+buildscript {
+    repositories {
+        // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+
 plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'java-library'
 }
 
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+apply plugin: 'org.spongepowered.mixin'
 
-group = 'nl.curryducker'
-version = '1.1'
+group = project.maven_group
+version = project.mod_version
 
 java {
-    archivesBaseName = 'toolcompat'
+    archivesBaseName = project.archives_base_name
     toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 
@@ -42,6 +57,8 @@ minecraft {
             // "REGISTRIES": For firing of registry events.
             // "REGISTRYDUMP": For getting the contents of all registries.
             property 'forge.logging.markers', 'REGISTRIES'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
 
             // Recommended logging level for the console
@@ -117,28 +134,55 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    // Put repositories for dependencies here
-    // ForgeGradle automatically adds the Forge maven and Maven Central for you
-    maven { url "https://www.cursemaven.com" }
-
-    // If you have mod jar dependencies in ./libs, you can declare them as a repository like so:
-    // flatDir {
-    //     dir 'libs'
-    // }
+    maven {
+        name 'Progwm16 maven'
+        url 'https://dvs1.progwml6.com/files/maven'
+    }
+    maven {
+        name 'tterrag maven'
+        url 'https://maven.tterrag.com'
+    }
+    maven {
+        url 'https://www.cursemaven.com'
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven {
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/"
+    }
+    maven { url "https://maven.shedaniel.me/" }
 }
 
 dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.19.2-43.2.0'
-    runtimeOnly fg.deobf("curse.maven:jei-238222:4239206")
-    compileOnly fg.deobf("curse.maven:farmers-delight-398521:3999157")
-    compileOnly fg.deobf("curse.maven:create-alloyed-564792:4210862")
-    compileOnly fg.deobf("curse.maven:create-328085:4174330")
-    compileOnly fg.deobf("curse.maven:frosted-friends-355720:4119181")
-    compileOnly fg.deobf("curse.maven:create-stuff-additions-466792:4284328")
-    compileOnly fg.deobf("curse.maven:nethers-delight-496394:3971576")
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
+    compileOnly fg.deobf("dev.emi:emi-forge:${emi_version}:api")
+    compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-api-forge:${rei_version}")
+    compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-default-plugin-forge:${rei_version}")
+    compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${rei_version}")
+
+    compileOnly fg.deobf("me.shedaniel.cloth:cloth-config-forge:${cloth_config_version}")
+    compileOnly fg.deobf("dev.architectury:architectury-forge:${architectury_version}")
+
+    compileOnly fg.deobf("curse.maven:farmers-delight-398521:${farmers_delight_id}")
+    compileOnly fg.deobf("curse.maven:create-alloyed-564792:${alloyed_id}")
+    compileOnly fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    compileOnly fg.deobf("com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
+    implementation fg.deobf("curse.maven:frosted-friends-355720:${frosted_friends_id}")
+    compileOnly fg.deobf("curse.maven:create-stuff-additions-466792:${sa_id}")
+    compileOnly fg.deobf("curse.maven:nethers-delight-496394:${nethers_delight_id}")
+    compileOnly fg.deobf("curse.maven:blue-skies-312918:${blue_skies_id}")
+    implementation fg.deobf("curse.maven:copperized-567666:${copperized_id}")
+
+    compileOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

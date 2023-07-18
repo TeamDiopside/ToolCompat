@@ -1,0 +1,22 @@
+{
+  "item.toolcompat.brass_knife": "Brass Knife",
+  "item.toolcompat.brass_machete": "Brass Machete",
+  "item.toolcompat.brass_snow_shovel": "Brass Snow Shovel",
+  "item.toolcompat.copper_knife": "Copper Knife",
+  "item.toolcompat.copper_machete": "Copper Machete",
+  "item.toolcompat.copper_snow_shovel": "Copper Snow Shovel",
+  "item.toolcompat.ice_knife": "Ice Knife",
+  "item.toolcompat.ice_machete": "Ice Machete",
+  "item.toolcompat.steel_machete": "Steel Machete",
+  "item.toolcompat.steel_snow_shovel": "Steel Snow Shovel",
+  "item.toolcompat.zinc_knife": "Zinc Knife",
+  "item.toolcompat.zinc_machete": "Zinc Machete",
+  "item.toolcompat.zinc_snow_shovel": "Zinc Snow Shovel",
+  "itemGroup.toolcompat": "Tool Compat",
+  "toolcompat.config.jei_available": "Show Unavailable In JEI",
+  "toolcompat.config.title": "Tool Compat Client Config",
+  "toolcompat.materialmod": "Material Mod",
+  "toolcompat.materialmods": "Material Mods (Only 1 required)",
+  "toolcompat.toolmod": "Tool Mod",
+  "toolcompat.unavailable": "This item is unavailable. Please install the required mods to obtain it."
+}

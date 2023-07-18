@@ -1,7 +1,0 @@
-{
-  "parent": "frosted_friends:custom/winter_spade",
-  "textures": {
-    "0": "toolcompat:item/steel_snow_shovel",
-    "particle": "toolcompat:item/steel_snow_shovel"
-  }
-}

@@ -1,0 +1,17 @@
+// 1.19.2	2023-07-17T16:04:08.0737514	Item Models: toolcompat
+ea0958ae2ccca6fe85b644e74892d3d1e4c09d6a assets/toolcompat/models/item/brass_knife.json
+72121e23500388587027b661f9a0924b57f5b99f assets/toolcompat/models/item/brass_machete.json
+5c4447e348d80a4c70ad1012f720da8d990284d3 assets/toolcompat/models/item/brass_snow_shovel.json
+9a1a378644728093ef93d12d9dc5bff596cb3062 assets/toolcompat/models/item/copper_knife.json
+5953451561f044673e2ddc39705e62b4a7fb35fe assets/toolcompat/models/item/copper_machete.json
+bd79c235681db3413febfb0c9b848b3427aea1ed assets/toolcompat/models/item/copper_snow_shovel.json
+2cca1415c812b39df4be2cef8331cfc59fed52c9 assets/toolcompat/models/item/ice_knife.json
+0bdd67a6abb276a235e607a503412f829e4e0cd1 assets/toolcompat/models/item/ice_machete.json
+1f01aff9983ba607ccc6a6678dfc0e2e96f50cc5 assets/toolcompat/models/item/steel_machete.json
+503f4fc7622cb4c2ee64afe2e8043905edf37c80 assets/toolcompat/models/item/steel_snow_shovel.json
+f25dc1aaf245b8f1151466f9e1fff7f18447d96b assets/toolcompat/models/item/unavailable/knife.json
+ed243024c94980196507bd7acd97dfb4461b868e assets/toolcompat/models/item/unavailable/machete.json
+ccab153af9c5bd13610244ece20c674154b8cf76 assets/toolcompat/models/item/unavailable/snow_shovel.json
+b1d82b5023e4295b05ee744f68ce9f85739d717e assets/toolcompat/models/item/zinc_knife.json
+16f18214cb7195c648e26aa999f80602a4b3981f assets/toolcompat/models/item/zinc_machete.json
+39e2c01a73bdc0c8fab3a6a7a8061b1a6ec1a280 assets/toolcompat/models/item/zinc_snow_shovel.json

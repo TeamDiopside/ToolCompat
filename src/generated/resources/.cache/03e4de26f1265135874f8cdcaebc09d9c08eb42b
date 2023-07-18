@@ -1,0 +1,27 @@
+// 1.19.2	2023-07-17T19:57:25.6160685	Tags for minecraft:item
+4fbd025bd3c55a32834a3347b725cccf6b378ae1 data/farmersdelight/tags/items/tools/knives.json
+3e523c41c5924d461b10de9cff886c305664addb data/forge/tags/items/axes.json
+e4df15955f755d371a75c2573c59cfca62a22144 data/forge/tags/items/hoes.json
+62a08dbba8d31146be8d8adf446c9ba6f0544444 data/forge/tags/items/knives.json
+b1bb6cfb2aa3f27ec390d468477122b1be061bfd data/forge/tags/items/machetes.json
+a7aa4f0b8e0adfd2cff6d4be1d2de2387fb0cbc3 data/forge/tags/items/pickaxes.json
+ad6475debf3b0ec813dc4b4211bdb25bfe5edeab data/forge/tags/items/shovels.json
+5a707197badb03edfd5139a8cbd5e04080f08e83 data/forge/tags/items/snow_shovels.json
+ac72ab1888c59b7cacc419024f7a57fe035f6098 data/forge/tags/items/swords.json
+497fa1e8da8bdf4ef19fef0537aef1fde950f10a data/forge/tags/items/tools.json
+b68fe622b594aeb5130111c429800d8e8ac81fec data/forge/tags/items/tools/axes.json
+0b8e5861cc2e0b6a9e1e9621e2634db40230f756 data/forge/tags/items/tools/hoes.json
+c26146c2bb5f9b226a725666f6fee5ae0f8de79e data/forge/tags/items/tools/knives.json
+8649b12bb7b09abd9708a74cdc68430a5ff798bf data/forge/tags/items/tools/machetes.json
+3b1acc52b0e509ee8332daef0f5b3c34a47b777d data/forge/tags/items/tools/pickaxes.json
+24071a17843cc0ef15c365f756d18e89fd5180d5 data/forge/tags/items/tools/shovels.json
+e473d0a676bd2e50ccdace8e5cf68cd8a3ef4edc data/forge/tags/items/tools/snow_shovels.json
+96fa6dcf2a8b3ce4b08e35e9c6e3c65c8613efde data/forge/tags/items/tools/swords.json
+a7aa4f0b8e0adfd2cff6d4be1d2de2387fb0cbc3 data/minecraft/tags/items/cluster_max_harvestables.json
+12cdc1c0c43aa3d1aa4c85a13b6ed0415b9a3f5d data/nethersdelight/tags/items/tools/machetes.json
+f43be4825f68dfac0f33566e45c13bb8f5b25600 data/toolcompat/tags/items/brass_snow_shovel_ingredient.json
+a9597b1d27a1de1a122bc14511b1e5ea09079711 data/toolcompat/tags/items/copper_snow_shovel_ingredient.json
+f5da6f4a6058ad049025ebaeb1e9fbba0eecd675 data/toolcompat/tags/items/ice_tool_ingredient.json
+a95a7825f9c276424b73df1ddce3a89fe781e981 data/toolcompat/tags/items/steel_machete_ingredient.json
+a2d1fbae4fc3e96607cda660554615d493d3bc9b data/toolcompat/tags/items/steel_snow_shovel_ingredient.json
+298122845c714af449ec471f11021c87d467d457 data/toolcompat/tags/items/zinc_snow_shovel_ingredient.json

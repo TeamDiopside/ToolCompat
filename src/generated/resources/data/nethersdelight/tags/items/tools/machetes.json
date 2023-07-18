@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "oreganized:electrum_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:copper_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:steel_machete",
+      "required": false
+    }
+  ]
+}

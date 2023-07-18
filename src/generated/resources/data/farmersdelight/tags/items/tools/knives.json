@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "toolcompat:copper_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_knife",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "create_sa:copper_shovel",
+      "required": false
+    },
+    {
+      "id": "copperized:copper_shovel",
+      "required": false
+    }
+  ]
+}

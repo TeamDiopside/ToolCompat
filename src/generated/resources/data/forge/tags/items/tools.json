@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "#forge:tools/axes",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/hoes",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/knives",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/machetes",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/pickaxes",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/shovels",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/snow_shovels",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/swords",
+      "required": false
+    }
+  ]
+}

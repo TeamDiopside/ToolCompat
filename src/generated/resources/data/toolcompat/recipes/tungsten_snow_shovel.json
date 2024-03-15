@@ -1,0 +1,50 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "frosted_friends"
+            },
+            {
+              "type": "forge:or",
+              "values": [
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "stalwart_dungeons"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "snow_shovels",
+        "key": {
+          "H": {
+            "tag": "toolcompat:tungsten_snow_shovel_ingredient"
+          },
+          "M": {
+            "tag": "forge:ingots/tungsten"
+          },
+          "S": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "M",
+          "H",
+          "S"
+        ],
+        "result": {
+          "item": "toolcompat:tungsten_snow_shovel"
+        }
+      }
+    }
+  ]
+}

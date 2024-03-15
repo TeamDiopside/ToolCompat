@@ -31,6 +31,38 @@
     {
       "id": "#forge:tools/swords",
       "required": false
+    },
+    {
+      "id": "#forge:tools/scythe",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/greatsword",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/spear",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/dagger",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/katar",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/scimitar",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/crowbill",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/katana",
+      "required": false
     }
   ]
 }

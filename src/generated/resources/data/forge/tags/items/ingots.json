@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "#forge:ingots/horizonite",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/pendorite",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/tungsten",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/adamantite",
+      "required": false
+    }
+  ]
+}

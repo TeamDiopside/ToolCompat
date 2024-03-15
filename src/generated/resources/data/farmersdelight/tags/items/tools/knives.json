@@ -15,6 +15,50 @@
     {
       "id": "toolcompat:ice_knife",
       "required": false
+    },
+    {
+      "id": "toolcompat:diopside_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pendorite_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:warden_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_knife",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_knife",
+      "required": false
     }
   ]
 }

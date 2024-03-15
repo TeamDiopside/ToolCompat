@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "nethersdelight"
+            },
+            {
+              "type": "forge:or",
+              "values": [
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "enlightened_end"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smithing",
+        "addition": {
+          "tag": "forge:ingots/adamantite"
+        },
+        "base": {
+          "tag": "toolcompat:adamantite_machete_ingredient"
+        },
+        "result": {
+          "item": "toolcompat:adamantite_machete"
+        }
+      }
+    }
+  ]
+}

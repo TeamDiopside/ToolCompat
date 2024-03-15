@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "nethersdelight"
+            },
+            {
+              "type": "forge:or",
+              "values": [
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "additionaladditions"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smithing",
+        "addition": {
+          "item": "additionaladditions:gold_ring"
+        },
+        "base": {
+          "tag": "toolcompat:gilded_netherite_machete_ingredient"
+        },
+        "result": {
+          "item": "toolcompat:gilded_netherite_machete"
+        }
+      }
+    }
+  ]
+}

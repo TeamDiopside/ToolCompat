@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "toolcompat:copper_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:steel_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:diopside_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_scimitar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_scimitar",
+      "required": false
+    }
+  ]
+}

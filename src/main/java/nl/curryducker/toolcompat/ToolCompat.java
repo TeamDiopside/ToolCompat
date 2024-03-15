@@ -26,9 +26,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import nl.curryducker.toolcompat.config.TCClientConfig;
 import nl.curryducker.toolcompat.config.TCConfigScreen;
-import nl.curryducker.toolcompat.registry.FD;
-import nl.curryducker.toolcompat.registry.FF;
-import nl.curryducker.toolcompat.registry.ND;
+import nl.curryducker.toolcompat.registry.*;
 import nl.curryducker.toolcompat.tools.TCItemProperties;
 import nl.curryducker.toolcompat.tools.TCTiers;
 import nl.curryducker.toolcompat.tools.UnavailableItem;
@@ -39,6 +37,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
+
+import static nl.curryducker.toolcompat.registry.ItemProperties.getProperties;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ToolCompat.MODID)
@@ -94,6 +94,7 @@ public class ToolCompat {
             "warden_crowbill",
             "warden_katana",
 
+            "adamantite_knife",
             "adamantite_scythe",
             "adamantite_greatsword",
             "adamantite_spear",
@@ -113,51 +114,100 @@ public class ToolCompat {
             "electrum_katar",
             "electrum_scimitar",
             "electrum_crowbill",
-            "electrum_katana",
+            "electrum_katana"
+    );
+    public static List<String> FORGE_TOOL_TYPES = List.of(
+            "axes",
+            "hoes",
+            "knives",
+            "machetes",
+            "pickaxes",
+            "shovels",
+            "snow_shovels",
+            "swords",
+            "scythe",
+            "greatsword",
+            "spear",
+            "dagger",
+            "katar",
+            "scimitar",
+            "crowbill",
+            "katana"
+    );
+    public static Map<String, String> MODDED_TOOL_TYPES = Map.ofEntries(
+            Map.entry("knife", "knives"),
+            Map.entry("machete", "machetes"),
+            Map.entry("snow_shovel", "snow_shovels"),
+            Map.entry("scythe", "scythes"),
+            Map.entry("greatsword", "greatswords"),
+            Map.entry("spear", "spears"),
+            Map.entry("dagger", "daggers"),
+            Map.entry("katar", "katars"),
+            Map.entry("scimitar", "scimitars"),
+            Map.entry("crowbill", "crowbills"),
+            Map.entry("katana", "katanas")
+    );
+    public static Map<String, String> ID_NAME_MAP = Map.ofEntries(
+            Map.entry("farmersdelight", "Farmer's Delight"),
+            Map.entry("nethersdelight", "Nether's Delight"),
+            Map.entry("frosted_friends", "Frosted Friends"),
+            Map.entry("create_sa", "Create Stuff & Additions"),
+            Map.entry("copperized", "Copperized"),
+            Map.entry("alloyed", "Create: Alloyed"),
+            Map.entry("simple_weapons", "Simple Weapons for Better Combat"),
+            Map.entry("blue_skies", "Blue Skies"),
+            Map.entry("byg", "Oh The Biomes You'll Go"),
+            Map.entry("deeperdarker", "Deeper and Darker"),
+            Map.entry("stalwart_dungeons", "Stalwart Dungeons"),
+            Map.entry("additionaladditions", "Additional Additions"),
+            Map.entry("enlightened_end", "Enlightend"),
+            Map.entry("oreganized", "Oreganized")
+    );
+    public static Map<String, String> TYPE_ID_MAP = Map.ofEntries(
+            Map.entry("knife", "farmersdelight"),
+            Map.entry("machete", "nethersdelight"),
+            Map.entry("snow_shovel", "frosted_friends"),
+            Map.entry("scythe", "simple_weapons"),
+            Map.entry("greatsword", "simple_weapons"),
+            Map.entry("spear", "simple_weapons"),
+            Map.entry("dagger", "simple_weapons"),
+            Map.entry("katar", "simple_weapons"),
+            Map.entry("scimitar", "simple_weapons"),
+            Map.entry("crowbill", "simple_weapons"),
+            Map.entry("katana", "simple_weapons")
+    );
 
-            "tungsten_shield",
-            "tungsten_hammer",
-
-            "chorundum_shield",
-            "chorundum_hammer"
-    );
-    public static List<String> FORGE_TOOL_TYPES = List.of("axes", "hoes", "knives", "machetes", "pickaxes", "shovels", "snow_shovels", "swords");
-    public static Map<String, String> MODDED_TOOL_TYPES = Map.of(
-            "knife", "knives",
-            "machete", "machetes",
-            "snow_shovel", "snow_shovels"
-    );
-    public static Map<String, String> ID_NAME_MAP = Map.of(
-            "farmersdelight", "Farmer's Delight",
-            "nethersdelight", "Nether's Delight",
-            "frosted_friends", "Frosted Friends",
-            "create_sa", "Create Stuff & Additions",
-            "copperized", "Copperized",
-            "alloyed", "Create: Alloyed"
-    );
-    public static Map<String, String> TYPE_ID_MAP = Map.of(
-            "knife", "farmersdelight",
-            "machete", "nethersdelight",
-            "snow_shovel", "frosted_friends"
-    );
-    public static List<TCTiers> SMITHING_TIERS = List.of(TCTiers.STEEL);
+    public static List<TCTiers> SMITHING_TIERS = List.of(TCTiers.STEEL, TCTiers.PENDORITE, TCTiers.WARDEN, TCTiers.ROSE_GOLD, TCTiers.GILDED_NETHERITE, TCTiers.ADAMANTITE, TCTiers.ELECTRUM);
 
     private void registerItems() {
         if (ModList.get().isLoaded("farmersdelight")) {
             FD.register();
         } else {
-            registerUnavailable("knife", FD.MOD_ID);
+            registerUnavailable("knife", "farmersdelight");
         }
         if (ModList.get().isLoaded("frosted_friends")) {
             FF.register();
         } else {
-            registerUnavailable("snow_shovel", FF.MOD_ID);
+            registerUnavailable("snow_shovel", "frosted_friends");
         }
         if (ModList.get().isLoaded("nethersdelight")) {
             ND.register();
         } else {
-            registerUnavailable("machete", ND.MOD_ID);
+            registerUnavailable("machete", "nethersdelight");
         }
+        if (ModList.get().isLoaded("simple_weapons")) {
+            SWBC.register();
+        } else {
+            registerUnavailable("scythe", "simple_weapons");
+            registerUnavailable("greatsword", "simple_weapons");
+            registerUnavailable("spear", "simple_weapons");
+            registerUnavailable("dagger", "simple_weapons");
+            registerUnavailable("katar", "simple_weapons");
+            registerUnavailable("scimitar", "simple_weapons");
+            registerUnavailable("crowbill", "simple_weapons");
+            registerUnavailable("katana", "simple_weapons");
+        }
+
     }
 
 
@@ -166,17 +216,17 @@ public class ToolCompat {
             String reg_name = tier.toString().toLowerCase() + "_" + toolType;
             if (FORBIDDEN_REGISTRY.contains(reg_name))
                 continue;
-            ToolCompat.REGISTRY.add(ITEMS.register(reg_name, () -> new UnavailableItem(new Item.Properties().tab(TAB), toolmod, tier.getMaterialMods())));
+            ToolCompat.REGISTRY.add(ITEMS.register(reg_name, () -> new UnavailableItem(getProperties(tier), toolmod, tier.getMaterialMods())));
         }
     }
 
-    public static <T extends Item> RegistryObject<T> registerItem(String toolmod, String[] materialMods, String name, Supplier<T> item) {
+    public static <T extends Item> RegistryObject<T> registerItem(String toolmod, String[] materialMods, String name, Supplier<T> item, TCTiers tier) {
         for (String mod : materialMods) {
             if (ModList.get().isLoaded(mod)) {
                 return ITEMS.register(name, item);
             }
         }
-        return ITEMS.register(name, () -> (T) new UnavailableItem(new Item.Properties().tab(TAB), toolmod, materialMods));
+        return ITEMS.register(name, () -> (T) new UnavailableItem(getProperties(tier), toolmod, materialMods));
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

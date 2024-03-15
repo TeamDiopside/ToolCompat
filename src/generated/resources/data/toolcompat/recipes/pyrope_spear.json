@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "simple_weapons"
+            },
+            {
+              "type": "forge:or",
+              "values": [
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "blue_skies"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "spears",
+        "key": {
+          "M": {
+            "tag": "forge:gems/pyrope"
+          },
+          "S": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " MM",
+          " SM",
+          "S  "
+        ],
+        "result": {
+          "item": "toolcompat:pyrope_spear"
+        }
+      }
+    }
+  ]
+}

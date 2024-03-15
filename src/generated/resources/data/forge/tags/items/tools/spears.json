@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "toolcompat:copper_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:steel_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:diopside_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_spear",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_spear",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "toolcompat:copper_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:steel_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:diopside_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_katana",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_katana",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "toolcompat:item/datagen_pls_work/katana",
+  "overrides": [
+    {
+      "model": "toolcompat:item/unavailable/katana",
+      "predicate": {
+        "toolcompat:unavailable": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "toolcompat:item/charoite_katana"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "#forge:gems/diopside",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/aquite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/pyrope",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/charoite",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/chorundum",
+      "required": false
+    }
+  ]
+}

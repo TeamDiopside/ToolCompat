@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "overrides": [
+    {
+      "model": "toolcompat:item/unavailable/dagger",
+      "predicate": {
+        "toolcompat:unavailable": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "toolcompat:item/charoite_dagger"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "nethersdelight"
+            },
+            {
+              "type": "forge:or",
+              "values": [
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "deeperdarker"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smithing",
+        "addition": {
+          "tag": "toolcompat:warden_repair_ingredient"
+        },
+        "base": {
+          "tag": "toolcompat:warden_machete_ingredient"
+        },
+        "result": {
+          "item": "toolcompat:warden_machete"
+        }
+      }
+    }
+  ]
+}

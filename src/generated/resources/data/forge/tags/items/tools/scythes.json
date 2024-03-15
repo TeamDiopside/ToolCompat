@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "toolcompat:copper_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:steel_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:diopside_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_scythe",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_scythe",
+      "required": false
+    }
+  ]
+}

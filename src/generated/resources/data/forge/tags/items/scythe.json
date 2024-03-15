@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "#forge:tools/scythe",
+      "required": false
+    }
+  ]
+}

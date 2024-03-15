@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "toolcompat:copper_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:steel_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:diopside_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_dagger",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_dagger",
+      "required": false
+    }
+  ]
+}

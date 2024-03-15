@@ -1,0 +1,51 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "simple_weapons"
+            },
+            {
+              "type": "forge:or",
+              "values": [
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "create_sa"
+                },
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "copperized"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "scythes",
+        "key": {
+          "M": {
+            "tag": "forge:ingots/copper"
+          },
+          "S": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "MMM",
+          " SM",
+          " S "
+        ],
+        "result": {
+          "item": "toolcompat:copper_scythe"
+        }
+      }
+    }
+  ]
+}

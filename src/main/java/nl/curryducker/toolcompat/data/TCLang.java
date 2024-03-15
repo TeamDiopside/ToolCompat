@@ -18,7 +18,7 @@ public class TCLang extends LanguageProvider {
     protected void addTranslations() {
         for (RegistryObject<? extends Item> entry : ToolCompat.REGISTRY) {
             this.add("item.toolcompat." + (Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(entry.get())).getPath()),
-                    capitalizeWord((Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(entry.get())).getPath()).replaceAll("_", " ")));
+                    capitalizeAndColorWord((Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(entry.get())).getPath()).replaceAll("_", " ")));
         }
         this.add("itemGroup.toolcompat", "Tool Compat");
         this.add("toolcompat.unavailable", "This item is unavailable. Please install the required mods to obtain it.");
@@ -29,14 +29,18 @@ public class TCLang extends LanguageProvider {
         this.add("toolcompat.config.jei_available", "Show Unavailable In JEI");
     }
 
-    public static String capitalizeWord(String str){
+    public static String capitalizeAndColorWord(String str){
         String[] words = str.split(" ");
         StringBuilder capitalizeWord = new StringBuilder();
         for(String w : words){
             String first = w.substring(0,1);
-            String afterfirst = w.substring(1);
-            capitalizeWord.append(first.toUpperCase()).append(afterfirst).append(" ");
+            String afterFirst = w.substring(1);
+            capitalizeWord.append(first.toUpperCase()).append(afterFirst).append(" ");
         }
-        return capitalizeWord.toString().trim();
+        if (str.contains("tungsten") || str.contains("chorundum")) {
+            return "§e" + capitalizeWord.toString().trim();
+        } else {
+            return capitalizeWord.toString().trim();
+        }
     }
 }

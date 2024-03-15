@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "simple_weapons"
+            },
+            {
+              "type": "forge:or",
+              "values": [
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "additionaladditions"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smithing",
+        "addition": {
+          "item": "additionaladditions:rose_gold_alloy"
+        },
+        "base": {
+          "tag": "toolcompat:rose_gold_scimitar_ingredient"
+        },
+        "result": {
+          "item": "toolcompat:rose_gold_scimitar"
+        }
+      }
+    }
+  ]
+}

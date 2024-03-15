@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "toolcompat:copper_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:steel_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:diopside_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_katar",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_katar",
+      "required": false
+    }
+  ]
+}

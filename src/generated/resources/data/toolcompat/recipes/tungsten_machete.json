@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "nethersdelight"
+            },
+            {
+              "type": "forge:or",
+              "values": [
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "stalwart_dungeons"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "machetes",
+        "key": {
+          "M": {
+            "tag": "forge:ingots/tungsten"
+          },
+          "S": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "  M",
+          " M ",
+          "S  "
+        ],
+        "result": {
+          "item": "toolcompat:tungsten_machete"
+        }
+      }
+    }
+  ]
+}

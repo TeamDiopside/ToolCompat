@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "toolcompat:copper_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:steel_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:diopside_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_crowbill",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_crowbill",
+      "required": false
+    }
+  ]
+}

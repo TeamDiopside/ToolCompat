@@ -43,6 +43,58 @@
     {
       "id": "toolcompat:steel_snow_shovel",
       "required": false
+    },
+    {
+      "id": "toolcompat:diopside_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pendorite_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:warden_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:adamantite_snow_shovel",
+      "required": false
+    },
+    {
+      "id": "toolcompat:electrum_snow_shovel",
+      "required": false
     }
   ]
 }

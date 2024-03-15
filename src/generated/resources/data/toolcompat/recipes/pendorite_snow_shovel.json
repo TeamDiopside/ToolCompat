@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "frosted_friends"
+            },
+            {
+              "type": "forge:or",
+              "values": [
+                {
+                  "type": "forge:mod_loaded",
+                  "modid": "byg"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smithing",
+        "addition": {
+          "tag": "forge:ingots/pendorite"
+        },
+        "base": {
+          "tag": "toolcompat:pendorite_snow_shovel_ingredient"
+        },
+        "result": {
+          "item": "toolcompat:pendorite_snow_shovel"
+        }
+      }
+    }
+  ]
+}

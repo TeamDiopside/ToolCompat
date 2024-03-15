@@ -1,0 +1,15 @@
+{
+  "parent": "toolcompat:item/datagen_pls_work/snow_shovel",
+  "overrides": [
+    {
+      "model": "toolcompat:item/unavailable/snow_shovel",
+      "predicate": {
+        "toolcompat:unavailable": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "0": "toolcompat:item/charoite_snow_shovel",
+    "particle": "toolcompat:item/charoite_snow_shovel"
+  }
+}

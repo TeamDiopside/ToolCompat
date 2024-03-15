@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "toolcompat:copper_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:zinc_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:brass_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:ice_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:steel_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:diopside_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_greatsword",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_greatsword",
+      "required": false
+    }
+  ]
+}

@@ -181,6 +181,13 @@ dependencies {
     compileOnly fg.deobf("curse.maven:nethers-delight-496394:${nethers_delight_id}")
     compileOnly fg.deobf("curse.maven:blue-skies-312918:${blue_skies_id}")
     implementation fg.deobf("curse.maven:copperized-567666:${copperized_id}")
+    compileOnly fg.deobf("curse.maven:simple-weapons-for-better-combat-681693:${simple_weapons_id}")
+    compileOnly fg.deobf("curse.maven:oh-the-biomes-youll-go-247560:${byg_id}")
+    compileOnly fg.deobf("curse.maven:deeperdarker-659011:${deeper_darker_id}")
+    compileOnly fg.deobf("curse.maven:stalwart-dungeons-474817:${stalwart_dungeons_id}")
+    implementation fg.deobf("curse.maven:additional-additions-forge-582387:${additional_additions_id}")
+    compileOnly fg.deobf("curse.maven:enlightend-502786:${enlightened_end_id}")
+    compileOnly fg.deobf("curse.maven:oreganized-769203:${oreganized_id}")
 
     compileOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 

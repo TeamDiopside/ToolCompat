@@ -23,6 +23,54 @@
     {
       "id": "toolcompat:steel_machete",
       "required": false
+    },
+    {
+      "id": "toolcompat:diopside_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:aquite_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pyrope_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:charoite_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:horizonite_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:pendorite_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:warden_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:tungsten_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:chorundum_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:rose_gold_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:gilded_netherite_machete",
+      "required": false
+    },
+    {
+      "id": "toolcompat:adamantite_machete",
+      "required": false
     }
   ]
 }

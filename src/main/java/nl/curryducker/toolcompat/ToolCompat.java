@@ -1,19 +1,13 @@
 package nl.curryducker.toolcompat;
 
 import com.mojang.logging.LogUtils;
-import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.core.NonNullList;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraftforge.api.distmarker.Dist;
+import net.minecraft.world.item.*;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -26,7 +20,10 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import nl.curryducker.toolcompat.config.TCClientConfig;
 import nl.curryducker.toolcompat.config.TCConfigScreen;
-import nl.curryducker.toolcompat.registry.*;
+import nl.curryducker.toolcompat.registry.FD;
+import nl.curryducker.toolcompat.registry.FF;
+import nl.curryducker.toolcompat.registry.ND;
+import nl.curryducker.toolcompat.registry.SWBC;
 import nl.curryducker.toolcompat.tools.TCItemProperties;
 import nl.curryducker.toolcompat.tools.TCTiers;
 import nl.curryducker.toolcompat.tools.UnavailableItem;
@@ -37,8 +34,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
-
-import static nl.curryducker.toolcompat.registry.ItemProperties.getProperties;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ToolCompat.MODID)
@@ -269,5 +264,13 @@ public class ToolCompat {
                 if (!(entry.get() instanceof UnavailableItem))
                     entry.get().fillItemCategory(this, pItems);
         }
+    }
+
+    // Item Properties
+    public static Item.Properties getProperties(TCTiers tier) {
+        Item.Properties prop = new Item.Properties().tab(ToolCompat.TAB);
+        if (tier.toString().equalsIgnoreCase("warden"))
+            prop.rarity(Rarity.RARE).fireResistant();
+        return prop;
     }
 }

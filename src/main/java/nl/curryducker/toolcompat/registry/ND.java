@@ -4,7 +4,7 @@ import nl.curryducker.toolcompat.ToolCompat;
 import nl.curryducker.toolcompat.tools.TCTiers;
 import umpaz.nethersdelight.common.item.MacheteItem;
 
-import static nl.curryducker.toolcompat.registry.ItemProperties.getProperties;
+import static nl.curryducker.toolcompat.ToolCompat.getProperties;
 
 public class ND {
     public static String MOD_ID = "nethersdelight";

@@ -4,7 +4,7 @@ import nl.curryducker.toolcompat.ToolCompat;
 import nl.curryducker.toolcompat.tools.SnowShovelItem;
 import nl.curryducker.toolcompat.tools.TCTiers;
 
-import static nl.curryducker.toolcompat.registry.ItemProperties.getProperties;
+import static nl.curryducker.toolcompat.ToolCompat.getProperties;
 
 public class FF {
     public static String MOD_ID = "frosted_friends";

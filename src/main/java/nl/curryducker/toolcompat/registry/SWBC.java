@@ -5,7 +5,7 @@ import nl.curryducker.toolcompat.ToolCompat;
 import nl.curryducker.toolcompat.tools.simple_weapons.*;
 import nl.curryducker.toolcompat.tools.TCTiers;
 
-import static nl.curryducker.toolcompat.registry.ItemProperties.getProperties;
+import static nl.curryducker.toolcompat.ToolCompat.getProperties;
 
 public class SWBC {
     public static String MOD_ID = "simple_weapons";
